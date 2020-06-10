@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Lapit Chat</string>
+    <string name="this_is_our_start_activity">This is our Start Activity</string>
+    <string name="welcome_to_the_chat_app">Welcome to the Chat App</string>
+    <string name="this_is_our_main_page">This is our Main Page!</string>
+    <string name="button">Button</string>
+    <string name="login">Login</string>
+    <string name="login_page">Login Page</string>
+    <string name="create_account">Create Account</string>
+    <string name="create_account_page">Create Account Page</string>
+    <string name="password">Password</string>
+    <string name="user_name">User Name</string>
+    <string name="email">Email</string>
 </resources>

@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
         Intent startIntent = new Intent(MainActivity.this, StartActivity.class);
         startActivity(startIntent);
         finish();
-
     }
 
     @Override

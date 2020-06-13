@@ -15,6 +15,7 @@ public class StartActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
+
         mRegBtn  = (Button) findViewById(R.id.start_reg_btn);
         mRegBtn.setOnClickListener(new View.OnClickListener() {
             @Override

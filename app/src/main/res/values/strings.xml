@@ -13,4 +13,10 @@
     <string name="email">Email</string>
     <string name="log_out">Log Out</string>
     <string name="create_new_account">Create New Account</string>
+    <string name="login_to_your_account">Login To Your Account</string>
+    <string name="welcome_to_lapit_chat_app">Welcome To Lapit Chat App</string>
+    <string name="need_a_new_account">Need a new Account?</string>
+    <string name="already_have_acount">Already have Acount</string>
+    <string name="registered_email">Registered Email</string>
+    <string name="registered_password">Registered Password</string>
 </resources>

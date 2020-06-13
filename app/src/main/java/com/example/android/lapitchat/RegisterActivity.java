@@ -38,7 +38,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
 //        Toolbar Set
-        mToolbar = (Toolbar) findViewById(R.id.register_toolbar);
+        mToolbar = (Toolbar) findViewById(R.id.login_toolbar);
         setSupportActionBar(mToolbar);
         getSupportActionBar().setTitle("Create Account");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -60,8 +60,9 @@ public class RegisterActivity extends AppCompatActivity {
             String email = mEmail.getText().toString();
             String password = mPassword.getText().toString();
             if (!TextUtils.isEmpty(user_name) && !TextUtils.isEmpty(email) && !TextUtils.isEmpty(password)){
+
                 mRegProgress.setTitle("Registering User");
-                mRegProgress.setMessage("Please wait while we create you account");
+                mRegProgress.setMessage("Please wait while we create your account.");
                 mRegProgress.setCanceledOnTouchOutside(false);
                 mRegProgress.show();
 
@@ -85,7 +86,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
             else{
                 mRegProgress.hide();
-                Toast.makeText(RegisterActivity.this, "Please Fill valid Email", Toast.LENGTH_LONG).show();
+                Toast.makeText(RegisterActivity.this, "Please fill different valid email.", Toast.LENGTH_LONG).show();
             }
            }
        });

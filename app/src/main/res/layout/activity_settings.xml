@@ -53,24 +53,28 @@
 
     <Button
         android:id="@+id/settings_image_btn"
-        android:layout_width="172dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="121dp"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="118dp"
+        android:layout_width="182dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="110dp"
         android:text="@string/change_image"
+        android:textColor="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/settings_status" />
 
     <Button
         android:id="@+id/settings_status_btn"
-        android:layout_width="172dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="121dp"
-        android:layout_marginEnd="118dp"
+        android:layout_width="182dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="@color/colorAccent"
         android:text="@string/change_status"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/settings_image_btn" />

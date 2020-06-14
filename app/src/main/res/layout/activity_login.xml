@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:hint="@string/registered_email"
+            android:hint="@string/email"
             android:inputType="textWebEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -76,7 +76,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:hint="@string/registered_password"
+            android:hint="@string/password"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 

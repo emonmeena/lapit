@@ -27,4 +27,10 @@
     <string name="change_image">Change Image</string>
     <string name="hi_there_i_m_using_lapit_chat_app">Hi there I\'m using Lapit Chat App</string>
     <string name="display_name">Display Name</string>
+    <string name="new_status">New Status</string>
+    <string name="create_new_satus">Create New Satus</string>
+    <string name="create_new_status">Create New Status</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="new_profile_picture">New Profile Picture</string>
+    <string name="your_status">Your Status</string>
 </resources>

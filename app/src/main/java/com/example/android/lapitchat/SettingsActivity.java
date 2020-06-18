@@ -3,7 +3,10 @@ package com.example.android.lapitchat;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.android.material.textfield.TextInputEditText;
@@ -29,6 +32,10 @@ public class SettingsActivity extends AppCompatActivity {
     private TextView mName;
     private TextView mStatus;
 
+    //BUTTON AVTIVITY
+    private Button mChangeStatusButton;
+    private Button mChangeImageButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +44,22 @@ public class SettingsActivity extends AppCompatActivity {
         mImage = (CircleImageView) findViewById(R.id.circleImageView);
         mName = (TextView) findViewById(R.id.settings_display_name);
         mStatus = (TextView) findViewById(R.id.settings_status);
+
+        //Declare Button Activity
+        mChangeStatusButton = (Button) findViewById(R.id.settings_status_btn);
+        mChangeImageButton = (Button) findViewById(R.id.settings_image_btn);
+
+        //Set Button Activity
+        mChangeStatusButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String Status_value = mStatus.getText().toString();
+
+                Intent status_intent = new Intent(SettingsActivity.this, StatusActivity.class);
+                status_intent.putExtra("status_value", Status_value);  //Sends existing status.
+                startActivity(status_intent);
+            }
+        });
 
         mCurrentUser = FirebaseAuth.getInstance().getCurrentUser();
         String uid = mCurrentUser.getUid();
